@@ -1,21 +1,21 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>recipe-detail</ion-title>
+    <ion-title>{{ loadedRecipe.title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-grid no-padding>
+  <ion-grid class="ion-no-padding">
     <!-- First line -->
     <ion-row>
-      <ion-col no-padding> 
+      <ion-col class="ion-no-padding"> 
         <ion-img [src]="loadedRecipe.imageURL"></ion-img> 
       </ion-col>
     </ion-row>
     <!-- Second line -->
     <ion-row>
-      <ion-col>
-        <h1 text-center>{{ loadedRecipe.title }}</h1>
+      <ion-col class="ion-text-center">
+        <h1>{{ loadedRecipe.title }}</h1>
       </ion-col>
     </ion-row>
     <!-- Third line -->
